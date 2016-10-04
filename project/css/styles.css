@@ -1,0 +1,293 @@
+
+
+
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+header {
+   background-color: #F4F4F4;
+   padding: 0 25px 0 25px;
+}
+
+body {
+  color: black;
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: medium;
+  padding: 20px 0;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+ul, li {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  background-color: white; 
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin: -10px 0;
+  border: 4px solid #F4F4F4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header img {
+  max-width: 75%;
+  margin: auto;
+  padding: 35px 0 0 0;
+  display: block;  
+}
+
+img {
+  max-width: 100%;
+}
+
+header p {
+  padding: 0 0 40px 0;
+  color: grey;
+
+}
+
+p {
+  padding: 0 15px 20px 15px;
+  text-align: center;
+}
+
+.main-content {
+  padding: 0 25px 0 25px;
+}
+
+footer {
+  padding: 20px 25px 20px 25px;
+  background-color: #F4F4F4;
+}
+
+.secondary-nav {
+  border: 10px;
+  border-top: solid 1px lightgray;
+  padding-top: 20px;
+}
+
+.secondary-nav h3, .secondary-nav p {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.secondary-nav p a {
+  text-decoration: none;
+  color: black;
+}
+
+.secondary-nav p {
+  float: right;
+  padding-right: 0;
+}
+
+/*----------------------------
+    Media Queries
+----------------------------*/
+
+@media (max-width: 768px) {
+  .secondary-nav ul {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  ul li {
+    display: inline;
+    border: none;
+    background-color: #F4F4F4;
+    padding: 0px 20px;
+  }
+  
+  ul {
+    background-color: #F4F4F4;
+    padding-bottom: 50px;
+  }
+
+  header {
+    padding-bottom: 80px;
+  }
+
+  header img {
+    max-width: 45%;
+    float: right;
+    clear: left;
+    padding-left: 10px;
+  } 
+
+  header p {
+    font-size: x-large;
+    text-align: left;
+  }
+
+  .port {
+    float: left;
+    clear: right;
+    width: 49%; 
+  }
+  
+  .search {
+    float: right;
+    width: 49%;
+  }
+
+  .travel {
+    float: left;
+    width: 49%;
+    clear: right;
+  }
+
+  .map {
+    float: right;
+    width: 49%;
+  }
+ 
+  .photo {
+    float: left;
+    width: 49%;
+    clear: right;
+  }
+
+  .calc {
+    float: right;
+    width: 49%;
+  }
+
+  .port p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .secondary-nav {
+    padding-top: 0px;
+  }
+
+  .secondary-nav p {
+    visibility: hidden;
+    display: none;
+    float: none;
+  }
+
+  .secondary-nav p, .secondary-nav ul {
+    display: inline-block;
+  }
+
+  .secondary-nav ul {
+    float: right;
+    margin: 24px 0;
+    padding: 0;
+    border: none;
+  }
+
+  .secondary-nav ul li {
+    padding-right: 0;
+  }
+
+  .secondary-nav ul li a {
+    font-size: small;
+  }
+
+  footer {
+    clear: both;
+  } 
+}
+
+@media (min-width: 1024px) {
+  
+  header h1, .main-nav {
+    display: inline-block;
+  }
+
+  .main-nav {
+    float: right;
+    clear: left;
+    margin: 70px 0 -15px 0;
+    padding-bottom: 0;
+  }
+
+  .main-nav ul {
+    padding: 0 30px 40px 0;
+    border: none;
+  }
+
+  header img {
+    margin: 0 50px;
+    clear: both;
+  }
+
+  body {
+    background-color: #F4F4F4;
+  }
+
+  .main-content {
+    background-color: white;
+    margin: 0 30px;
+    clear: both;
+  }
+  
+  .port, .search, .travel {
+    display: inline-block;
+    max-width: 32%;
+  }
+
+  .map, .photo, .calc {
+    display: inline-block;
+    max-width: 32%;
+  }
+
+  .search {
+    float: none;
+    margin: 0 10px 0 21px;
+  }
+  
+  .travel {
+    float: right;
+  }
+
+  .map {
+    float: left;
+    clear: right;
+  }
+
+  .photo {
+    float: none;
+    margin: 0 10px 0 21px;
+  }
+
+  .calc {
+    float: right;  
+  }
+
+  .travel p {
+    padding-bottom: 0;
+  }
+}
+
+
